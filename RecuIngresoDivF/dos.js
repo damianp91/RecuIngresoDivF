@@ -12,7 +12,7 @@ function mostrar() {
         porcS = 0,
         mayMate, nomMaymate, flag3 = 1,
         edadMaymate;
-    for (i = 0; i < 2; i++) {
+    for (i = 0; i < 500; i++) {
         nombre = prompt("Igrese su nombre: ");
         carrera = prompt("Ingrese carrera QUIMICA/FISICA/SISTEMAS: ").toUpperCase();
         while (carrera != "QUIMICA" && carrera != "FISICA" && carrera != "SISTEMAS") {
