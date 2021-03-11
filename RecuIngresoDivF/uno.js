@@ -7,7 +7,7 @@ function mostrar() {
         contQ = 0,
         promP = 0,
         promA = 0,
-        PromQ = 0,
+        promQ = 0,
         sexoMaysala, mayorSala, flag = 1,
         nomFem, sueldFem, flag2 = 1,
         contNob = 0;
@@ -53,7 +53,7 @@ function mostrar() {
             flag2 = 0;
         }
         //d
-        if (sexo == "NO BINARIO" && (salario >= 20000 || salario <= 55000)) {
+        if (sexo == "NO BINARIO" && salario >= 20000 && salario <= 55000) {
             contNob++;
         }
         seguir = prompt("¿Desea continuar? s/n: ");
@@ -65,9 +65,9 @@ function mostrar() {
         promA = sueldoA / contA;
     }
     if (contQ != 0) {
-        PromQ = sueldoQ / contQ;
+        promQ = sueldoQ / contQ;
     }
-    console.log(`a) El promedio de los sueldos es: programador ${promP} ARS, analista ${promA} ARS y Qa ${PromQ} ARS respectivamente`);
+    console.log(`a) El promedio de los sueldos es: programador ${promP} ARS, analista ${promA} ARS y Qa ${promQ} ARS respectivamente`);
     console.log(`b) EL sexo del que percibe el mayor salario es: ${sexoMaysala}, con un sueldo se ${mayorSala} ARS`);
     if (flag2) {
         console.log(`c) No se registran empleados femeninos`);
