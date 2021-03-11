@@ -62,7 +62,7 @@ function mostrar() {
             mayMate = cantMaerias;
             nomMaymate = nombre;
             edadMaymate = edad;
-            flag3;
+            flag3 = 0;
         }
     } // fin del for
     if (flag) {
